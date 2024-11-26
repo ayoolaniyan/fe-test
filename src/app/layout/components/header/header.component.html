@@ -1,0 +1,85 @@
+<header class="header">
+  <div class="header__left">
+    <div class="header__logo">
+      <!-- <img src="assets/logo.png" alt="Logo"> -->
+      <h2 class="logo">MillLuck</h2>
+    </div>
+
+    <nav class="header__nav" [class.header__nav--mobile]="isMobileMenuOpen">
+      <div class="header__nav-header">
+        <span class="menu-title">Menu</span>
+        <i class="icon icon--close" (click)="closeMobileMenu()" aria-label="Close menu"></i>
+      </div>
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">
+            Dashboard
+          </a>
+          <ul class="submenu">
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">
+                My dashBoard
+              </a>
+            </li>
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">
+                Your dashBoard
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">
+            Products
+          </a>
+          <ul class="submenu">
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">
+                All products
+              </a>
+            </li>
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">
+                My favourites
+              </a>
+            </li>
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">
+                Boring products
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">
+            Orders
+          </a>
+          <ul class="submenu">
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">
+                All orders
+              </a>
+            </li>
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">
+                Upcoming orders
+              </a>
+            </li>
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">
+                Completed orders
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="header__icons">
+    <i class="icon icon--search"></i>
+    <i class="icon icon--cart"></i>
+    <i class="icon icon--user"></i>
+    <i class="icon icon--menu" (click)="toggleMobileMenu()" aria-label="Toggle menu"></i>
+  </div>
+</header>

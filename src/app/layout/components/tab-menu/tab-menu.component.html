@@ -1,0 +1,15 @@
+<div class="tabs-container">
+  <div class="tab-buttons">
+    <button *ngFor="let tab of tabs; let i = index" class="tab-button" [class.active]="i === activeTab"
+      (click)="onSelectTab(i)">
+      {{ tab.label}}
+    </button>
+  </div>
+  <div class="tab-content" *ngFor="let tab of tabs; let i = index" [hidden]="i !== activeTab">
+    <div *ngIf="tab.content" [innerHTML]="tab.content"></div>
+    <ng-container *ngIf="tab.template">
+      <ng-container *ngTemplateOutlet="tab.template"></ng-container>
+      <a style="align-items: center; color: blue;">See All Changes</a>
+    </ng-container>
+  </div>
+</div>

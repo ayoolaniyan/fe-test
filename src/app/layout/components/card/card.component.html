@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-image">
+    <img [src]="imageUrl" alt="{{ title }}" />
+    <div class="promo-overlay" *ngIf="promoText">{{ promoText }}</div>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">{{ title }}</h2>
+    <p class="card-description">{{ description }}</p>
+    <p class="card-price">{{ price }}</p>
+    <button class="btn btn--form" (click)="addToCart()">Add to Cart</button>
+  </div>
+</div>

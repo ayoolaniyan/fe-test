@@ -1,0 +1,11 @@
+<ul class="order-list">
+  <li *ngFor="let order of orders" class="list-item">
+    <div class="content">
+      <h3 class="title">{{order.time}}<span>{{order.frequency}}</span></h3>
+      <a class="action-button" (click)="onClick(order)">{{order.status}}</a>
+    </div>
+    <div class="arrow-icon">
+      <i class="shortcut-icon icon--arrow-right"></i>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,17 @@
+<div class="carousel">
+  <div class="carousel-wrapper" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'"
+    [style.transition]="'transform ' + transitionSpeed + 'ms ease-in-out'">
+    <div class="carousel-item" *ngFor="let item of items">
+      <ng-container *ngIf="item">
+        <h2 class="heading-secondary">{{item.title}}</h2>
+        <p class="carousel-text">{{item.description}}</p>
+        <button class="btn btn--full">Read more</button>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="carousel-indicators">
+    <button *ngFor="let i of items; let idx = index" [class.active]="currentIndex === idx"
+      (click)="goToSlide(idx)"></button>
+  </div>
+</div>

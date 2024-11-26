@@ -1,0 +1,37 @@
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+
+  .tab-buttons {
+    display: flex;
+    border-bottom-color: $color-primary-light;
+
+    .tab-button {
+      flex: 1;
+      padding: 10px 20px;
+      text-align: center;
+      cursor: pointer;
+      background-color: #fff;
+      border: none ;
+      outline: none;
+      transition: background-color 0.3s ease;
+
+      &.active {
+        border-bottom: #189BDC solid 1px;
+        font-weight: bold;
+      }
+
+      &:hover {
+        background-color: lighten($color-background-light, 10%);
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid $color-tertiary;
+  }
+}

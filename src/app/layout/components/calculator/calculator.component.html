@@ -1,0 +1,31 @@
+<div class="slider-wrapper">
+  <div class="slider-header">
+    <h2 class="slider-title">Mill Luck Calculator</h2>
+  </div>
+  <div class="slider-container">
+    <div class="sliders">
+      <h2 class="title">Adjust the numbers</h2>
+
+      <label for="component-slider">Components per order</label><span>{{ componentsPerOrder }}</span>
+      <input type="range" id="component-slider" min="0" max="100" [(ngModel)]="componentsPerOrder"
+        (input)="updatedCalculations()" />
+
+      <label for="order-sliders">Order per year</label><span>{{ orderPerYear }}</span>
+      <input type="range" id="order-slider" min="0" max="200" [(ngModel)]="orderPerYear"
+        (input)="updatedCalculations()" />
+
+    </div>
+    <div class="results">
+      <h2 class="title">Estimated savings</h2>
+      <p>By using us compared to our competitors</p>
+      <div>
+        <label>Saved Capital:</label>
+        <span>{{ savedCapital }}</span>
+      </div>
+      <div>
+        <label>Saved CO2e:</label>
+        <span>{{ savedCO2e }}</span>
+      </div>
+    </div>
+  </div>
+</div>

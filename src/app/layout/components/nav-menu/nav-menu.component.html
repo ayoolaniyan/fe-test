@@ -1,0 +1,20 @@
+<nav class="header__nav" [class.header__nav--mobile]="isMobileMenuOpen">
+  <div class="header__nav-header">
+    <span class="menu-title">Menu</span>
+    <i class="icon icon--close" (click)="closeMobileMenu()" aria-label="Close menu"></i>
+  </div>
+  <ul class="header__nav-list">
+    <li class="header__nav-item" *ngFor="let item of menuItems">
+      <a href="{{ item.link }}" class="header__nav-link">
+        {{ item.label }}
+      </a>
+      <ul class="submenu" *ngIf="item.submenu?.length">
+        <li class="submenu-item" *ngFor="let subItem of item.submenu">
+          <a href="{{subItem.link}}" class="submenu-link">
+            {{ subItem.label }}
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
