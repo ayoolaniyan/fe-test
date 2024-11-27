@@ -5,7 +5,7 @@
   padding: 1rem 2rem;
   background-color: #00334D;
   color: $color-black;
-  min-width: 992px;
+  max-width: 1440px;
   height: 70px;
 
   &__left {
@@ -114,6 +114,7 @@
 
   @media (max-width: 768px) {
     display: inline-block;
+    min-width: 320px;
       &__left {
         display: inline-flex;
       }

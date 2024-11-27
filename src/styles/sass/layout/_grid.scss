@@ -11,7 +11,7 @@
   }
 
   @include respond(phone) {
-    min-width: $grid-width-mobile;
+    // min-width: $grid-width-mobile;
     padding: 0 10rem;
   }
 
