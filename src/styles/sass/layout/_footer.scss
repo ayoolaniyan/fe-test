@@ -4,10 +4,10 @@
   color: #fff;
   max-width: 1440px;
 
-  // @include respond(phone) {
-  //   padding: 6rem 0 9.6rem 0;
-  //   max-width: 320px;
-  // }
+  @include respond(phone) {
+    padding: 6rem 1.4rem;
+    min-width: 425px;
+  }
 }
 
 .footer-bottom {
@@ -16,10 +16,10 @@
   color: #fff;
   max-width: 1440px;
 
-  // @include respond(phone) {
-  //   padding: 6rem 0 9.6rem 0;
-  //   max-width: 320px;
-  // }
+  @include respond(phone) {
+    padding: 1.4rem;
+    min-width: 425px;
+  }
 
 }
 
