@@ -1,24 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "styles/sass/mixins.scss";
-@import "styles/sass/variables.scss";
+@import "styles/sass/abstracts/mixins.scss";
+@import "styles/sass/abstracts/variables.scss";
+@import "styles/sass/abstracts/utilities.scss";
 
-@import "styles/sass/base.scss";
-@import "styles/sass/topography.scss";
-@import "styles/sass/utilities.scss";
+@import "styles/sass/base/base.scss";
+@import "styles/sass/base/topography.scss";
+
+@import "styles/sass/components/icon.scss";
+@import "styles/sass/components/button.scss";
+@import "styles/sass/components/list.scss";
+@import "styles/sass/components/tabs.scss";
+@import "styles/sass/components/carousel.scss";
+@import "styles/sass/components/card.scss";
+@import "styles/sass/components/calculator.scss";
+
+@import "styles/sass/layout/footer.scss";
+@import "styles/sass/layout/grid.scss";
+@import "styles/sass/layout/header.scss";
 
 
-@import "styles/sass/icon.scss";
-@import "styles/sass/button.scss";
-@import "styles/sass//list.scss";
-@import "styles/sass/tabs.scss";
-@import "styles/sass/carousel.scss";
-@import "styles/sass/card.scss";
-@import "styles/sass/calculator.scss";
-
-@import "styles/sass/footer.scss";
-@import "styles/sass/grid.scss";
-@import "styles/sass/header.scss";
-
-
-@import "styles/sass/home.scss";
+@import "styles/sass/pages/home.scss";
