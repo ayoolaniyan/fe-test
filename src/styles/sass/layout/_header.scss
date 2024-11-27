@@ -113,6 +113,11 @@
     }
   }
 
+  @include respond(tab-port) {
+    padding: 6rem 1.4rem;
+    min-width: 800px;
+  }
+
   @include respond(phone) {
     display: inline-block;
     min-width: 425px;

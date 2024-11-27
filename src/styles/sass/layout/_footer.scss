@@ -8,6 +8,11 @@
     padding: 6rem 1.4rem;
     min-width: 425px;
   }
+
+  @include respond(tab-port) {
+    padding: 6rem 1.4rem;
+    min-width: 800px;
+  }
 }
 
 .footer-bottom {
@@ -19,6 +24,11 @@
   @include respond(phone) {
     padding: 1.4rem;
     min-width: 425px;
+  }
+
+  @include respond(tab-port) {
+    padding: 6rem 1.4rem;
+    min-width: 800px;
   }
 
 }
