@@ -2,11 +2,18 @@
   padding: 6rem 9.6rem 9.6rem 9.6rem;
   background-color: #00334D;
   color: #fff;
+  min-width: 992px;
+
+  @include respond(phone) {
+    padding: 6rem 0 9.6rem 0;
+  }
 }
+
 .footer-bottom {
   padding:  2rem 9.6rem;
   background-color: #046;
   color: #fff;
+  min-width: 992px;
 }
 
 .footer-logo {

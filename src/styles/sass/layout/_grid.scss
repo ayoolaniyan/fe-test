@@ -10,6 +10,11 @@
       }
   }
 
+  @include respond(phone) {
+    min-width: $grid-width-mobile;
+    padding: 0 10rem;
+  }
+
   @include respond(tab-port) {
       max-width: 50rem;
       padding: 0 3rem;

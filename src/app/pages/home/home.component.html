@@ -1,84 +1,83 @@
-<main class="main">
-  <div class="row">
-    <div class="col-1">
-      <div class="u-margin-bottom-big">
-        <h2 class="heading-primary">
-          Good morning, Jonas
-        </h2>
+<div class="row">
+  <div class="col-1">
+    <div class="u-margin-top-small">
+      <h2 class="heading-tertiary">Mill Luck Portal</h2>
+      <h2 class="heading-primary">
+        Good morning, Jonas
+      </h2>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-1-of-3">
+    <div class="u-margin-bottom-small">
+      <h2 class="heading-primary">
+        Shortcuts
+      </h2>
+    </div>
+    <div class="container grid grid--4-cols">
+      <div class="shortcut">
+        <i class="shortcut-icon icon--add"></i>
+        <p class="shortcut-title">New List</p>
+      </div>
+      <div class="shortcut">
+        <i class="shortcut-icon icon--calculator"></i>
+        <p class="shortcut-title">Calculator</p>
+      </div>
+      <div class="shortcut">
+        <i class="shortcut-icon icon--search"></i>
+        <p class="shortcut-title">Tool Finder</p>
+      </div>
+      <div class="shortcut">
+        <i class="shortcut-icon icon--faq"></i>
+        <p class="shortcut-title">FAQ</p>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-1-of-3">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-primary">
-          Shortcuts
-        </h2>
-      </div>
-      <div class="container grid grid--4-cols">
-        <div class="shortcut">
-          <i class="shortcut-icon icon--add"></i>
-          <p class="shortcut-title">New List</p>
-        </div>
-        <div class="shortcut">
-          <i class="shortcut-icon icon--calculator"></i>
-          <p class="shortcut-title">Calculator</p>
-        </div>
-        <div class="shortcut">
-          <i class="shortcut-icon icon--search"></i>
-          <p class="shortcut-title">Tool Finder</p>
-        </div>
-        <div class="shortcut">
-          <i class="shortcut-icon icon--faq"></i>
-          <p class="shortcut-title">FAQ</p>
-        </div>
-      </div>
+  <div class="col-2-of-3">
+    <div class="u-margin-bottom-small">
+      <h2 class="heading-primary">
+        News
+      </h2>
     </div>
-    <div class="col-2-of-3">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-primary">
-          News
-        </h2>
-      </div>
-      <app-carousel [items]="carouselItems" [autoPlay]="false" [autoPlayInterval]="5000" [showIndicators]="false"
-        (slideChanged)="onSlideChanged($event)"></app-carousel>
-    </div>
+    <app-carousel [items]="carouselItems" [autoPlay]="false" [autoPlayInterval]="5000" [showIndicators]="false"
+      (slideChanged)="onSlideChanged($event)"></app-carousel>
   </div>
-  <div class="row">
-    <div class="col-1-of-3">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-primary">
-          Order Information
-        </h2>
-      </div>
-
-      <app-tab-menu [tabs]="tabItems"></app-tab-menu>
-      <ng-template #customTemplate>
-        <app-list [orders]="newOrders"></app-list>
-      </ng-template>
-      <ng-template #customTemplate2>
-        <app-list [orders]="completedOrders"></app-list>
-      </ng-template>
-
+</div>
+<div class="row">
+  <div class="col-1-of-3">
+    <div class="u-center-text u-margin-bottom-big">
+      <h2 class="heading-primary">
+        Order Information
+      </h2>
     </div>
-    <div class="col-2-of-3">
-      <div class="u-margin-bottom-big">
-        <h2 class="heading-primary">
-          Popular products
-        </h2>
-      </div>
 
-      <div class="grid grid--5-cols">
-        <app-card *ngFor="let product of productItems" [imageUrl]="product.imageUrl" [title]="product.title"
-          [price]="product.price" [description]="product.description" [promoText]="product.promoText"
-          (cartAdded)="handleAddToCart(product)"></app-card>
-      </div>
+    <app-tab-menu [tabs]="tabItems"></app-tab-menu>
+    <ng-template #customTemplate>
+      <app-list [orders]="newOrders"></app-list>
+    </ng-template>
+    <ng-template #customTemplate2>
+      <app-list [orders]="completedOrders"></app-list>
+    </ng-template>
 
-    </div>
   </div>
-  <div class="row u-margin-bottom-big">
-    <div class="col-1">
-      <app-calculator></app-calculator>
+  <div class="col-2-of-3">
+    <div class="u-margin-bottom-big">
+      <h2 class="heading-primary">
+        Popular products
+      </h2>
     </div>
+
+    <div class="grid grid--5-cols">
+      <app-card *ngFor="let product of productItems" [imageUrl]="product.imageUrl" [title]="product.title"
+        [price]="product.price" [description]="product.description" [promoText]="product.promoText"
+        (cartAdded)="handleAddToCart(product)"></app-card>
+    </div>
+
   </div>
-</main>
+</div>
+<div class="row u-margin-bottom-big">
+  <div class="col-1">
+    <app-calculator></app-calculator>
+  </div>
+</div>

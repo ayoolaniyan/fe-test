@@ -13,6 +13,7 @@ import { CarouselItem } from '../../layout/modules/CarouselItem';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from "../../layout/components/card/card.component";
 import { ProductItem } from '../../layout/modules/ProductItem';
+import { FooterComponent } from "../../layout/components/footer/footer.component";
 
 
 @Component({
