@@ -18,7 +18,15 @@ import { ProductItem } from '../../layout/modules/ProductItem';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FontAwesomeModule, TabMenuComponent, OrderListComponent, CalculatorComponent, CarouselComponent, CardComponent],
+  imports: [
+    CommonModule,
+    FontAwesomeModule,
+    TabMenuComponent,
+    OrderListComponent,
+    CalculatorComponent,
+    CarouselComponent,
+    CardComponent
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
