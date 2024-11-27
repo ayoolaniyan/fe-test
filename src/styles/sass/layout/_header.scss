@@ -5,7 +5,7 @@
   padding: 1rem 2rem;
   background-color: #00334D;
   color: $color-black;
-  max-width: 1440px;
+  min-width: 1440px;
   height: 70px;
 
   &__left {
@@ -113,11 +113,6 @@
     }
   }
 
-  @include respond(tab-port) {
-    padding: 6rem 1.4rem;
-    min-width: 800px;
-  }
-
   @include respond(phone) {
     display: inline-block;
     min-width: 425px;
@@ -162,6 +157,10 @@
           }
         }
       }
+  }
+  @include respond(tab-port) {
+    padding: 6rem 1.4rem;
+    min-width: 800px;
   }
 }
 

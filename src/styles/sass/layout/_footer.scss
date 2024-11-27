@@ -2,7 +2,7 @@
   padding: 6rem 9.6rem 9.6rem 9.6rem;
   background-color: #00334D;
   color: #fff;
-  max-width: 1440px;
+  min-width: 1440px;
 
   @include respond(phone) {
     padding: 6rem 1.4rem;
@@ -19,7 +19,7 @@
   padding:  2rem 9.6rem;
   background-color: $color-primary-light;
   color: #fff;
-  max-width: 1440px;
+  min-width: 1440px;
 
   @include respond(phone) {
     padding: 1.4rem;
